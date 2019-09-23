@@ -1,0 +1,38 @@
+<html>
+<head>
+  
+  <title>Thebe Lab examples</title>
+  
+
+  <!-- Configure and load Thebe !-->
+  <script type="text/x-thebe-config">
+    {
+      bootstrap: true,
+      binderOptions: {
+        repo: "inspire99/vavr-notebook",
+      },
+      kernelOptions: {
+        name: "java",
+      },
+    }
+  </script>
+  <script type="text/javascript" src="https://unpkg.com/thebelab@^0.4.0"></script>
+  <!-- or to use a local build: -->
+  <!-- <script type="text/javascript" src="../lib/index.js"></script> -->
+
+</head>
+<body>
+  <h1>Thebe Lab</h1>
+  <h2>A minimal example</h2>
+
+  This page illustrates a minimal setup to get Thebe Lab running, using
+  <a href="http://mybinder.org">mybinder</a> as <em>kernel</em> (i.e.
+  computation backend) provider. See the
+  <a href="https://github.com/minrk/thebelab/blob/master/examples/index.html">
+  source file</a> for details.
+
+  <p>This is a cell:</p>
+
+  <pre data-executable="true" data-language="python">print("Hello!")</pre>
+</body>
+</html>
