@@ -33,6 +33,18 @@
 
   <p>This is a cell:</p>
 
-  <pre data-executable="true" data-language="python">print("Hello!")</pre>
+  <pre data-executable="true" data-language="python">
+   %mavenRepo central http://repo1.maven.org/maven2/
+%maven io.vavr:vavr:0.9.0    
+import io.vavr.control.*;
+import io.vavr.Tuple;
+import io.vavr.Tuple1;
+import io.vavr.Tuple2;
+
+Tuple1<String> stringTuple1 = Tuple.of("VAVR");
+Tuple2<String, Integer> stringIntTuple = Tuple.of("JAVA", 1);
+String s = stringTuple1._1();
+s
+  </pre>
 </body>
 </html>
